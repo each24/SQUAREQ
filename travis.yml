@@ -1,0 +1,5 @@
+ language: c
+ script: 
+-- make complete
++- make trpolab
++- make test
