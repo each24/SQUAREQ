@@ -15,6 +15,9 @@ test.o: test.c bibl.h
 	gcc -c test.c
 
 
+
+
+
 bibl.o: bibl.c bibl.h
 	gcc -c bibl.c
 
