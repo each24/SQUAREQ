@@ -1,0 +1,6 @@
+# игнорируем о файлы
+*.o
+
+/home/STUDENTS/2015/ip512s17/HelloWorld/LinYrka/Zanovo/Repo-pow/TRPOTEST/ctest/*
+/home/STUDENTS/2015/ip512s17/HelloWorld/LinYrka/Zanovo/Repo-pow/TRPOTEST/ctest
+
