@@ -1,9 +1,9 @@
 
-trpolab: ofiles/test.o ofiles/main.o ofiles/bibl.o
+trpolab: ./ofiles/test.o ./ofiles/main.o ./ofiles/bibl.o
 	gcc -lm -o trpolab test.o main.o bibl.o
 
 
-test: ofiles/test.o ofiles/main1.o ofiles/bibl.o
+test: ./ofiles/test.o ./ofiles/main1.o ./ofiles/bibl.o
 	gcc -lm -o test test.o main1.o bibl.o  
 
 
