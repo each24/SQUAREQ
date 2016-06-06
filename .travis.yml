@@ -2,3 +2,4 @@ language: c
 script:
   - make trpolab
   - make test
+  - ./test
