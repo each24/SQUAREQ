@@ -3,6 +3,8 @@ trpolab: test.o main.o bibl.o
 	gcc -lm -o trpolab  test.o main.o bibl.o
 
 
+
+
 test: test.o main1.o bibl.o
 	gcc -lm -o test test.o main1.o bibl.o  
 
