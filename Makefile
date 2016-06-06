@@ -2,8 +2,8 @@ OF=./ofiles
 HF=./hfiles
 CF=./cfiles
 
-trpolab: $(OF)/test.o $(OF)/main.o $(OF)/bibl.o
-	gcc -lm -o trpolab $(OF)/test.o $(OF)/main.o $(OF)/bibl.o
+trpolab: $(OF)/main.o $(OF)/bibl.o
+	gcc -lm -o trpolab $(OF)/main.o $(OF)/bibl.o
 
 
 test: $(OF)/test.o $(OF)/main1.o $(OF)/bibl.o
