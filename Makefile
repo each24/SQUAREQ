@@ -11,12 +11,12 @@ ofiles/main.o: main.c bibl.h
 	gcc -c -I main.c
 
 
-ofiles/test.o: test.c bibl.h 
+ofiles/test.o: ./cfiles/test.c bibl.h 
 	gcc -c -I ./hfiles test.c
 
 
 
-ofiles/bibl.o: bibl.c bibl.h
+ofiles/bibl.o: ./cfiles/bibl.c bibl.h
 	gcc -c -I ./hfiles bibl.c
 
 
