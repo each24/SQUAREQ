@@ -13,8 +13,8 @@ ofiles/main.o: main.c bibl.h
 	gcc -c -I main.c
 
 
-ofiles/test.o: cfiles/test.c hfiles/bibl.h 
-	gcc -c -I cfiles/test.c
+ofiles/test.o: test.c bibl.h 
+	gcc -c -I test.c
 
 
 
