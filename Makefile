@@ -1,28 +1,28 @@
 
-trpolab: test.o main.o bibl.o
-	gcc -lm -o trpolab  test.o main.o bibl.o
+trpolab: o files/test.o o files/main.o o files/bibl.o
+	gcc -lm -o trpolab  o files/test.o o files/main.o o files/bibl.o
 
 
 
 
-test: test.o main1.o bibl.o
-	gcc -lm -o test test.o main1.o bibl.o  
+test: o files/test.o o files/main1.o o files/bibl.o
+	gcc -lm -o test o files/test.o o files/main1.o o files/bibl.o  
 
 
-main.o: main.c bibl.h 
-	gcc -c main.c
+o files/main.o: c files/main.c h files/bibl.h 
+	gcc -c c files/main.c
 
 
-test.o: test.c bibl.h 
-	gcc -c test.c
+o files/test.o: c files/test.c h files/bibl.h 
+	gcc -c c files/test.c
 
 
 
 
 
-bibl.o: bibl.c bibl.h
-	gcc -c bibl.c
+o files/bibl.o: c files/bibl.c h files/bibl.h
+	gcc -c c files/bibl.c
 
 
-main1.o: main1.c
-	gcc -c main1.c
+o files/main1.o: c files/main1.c
+	gcc -c c files/main1.c
