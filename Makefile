@@ -8,17 +8,17 @@ test: ofiles/test.o ofiles/main1.o ofiles/bibl.o
 
 
 ofiles/main.o: ./cfiles/main.c ./hfiles/bibl.h 
-	gcc -c -I ./hfiles/main.c
+	gcc -c -I ./hfiles/ ./cfiles/main.c
 
 
 ofiles/test.o: ./cfiles/test.c ./hfiles/bibl.h 
-	gcc -c -I ./hfiles test.c
+	gcc -c -I ./hfiles ./cfiles/test.c
 
 
 
 ofiles/bibl.o: ./cfiles/bibl.c ./hfiles/bibl.h
-	gcc -c -I ./hfiles bibl.c
+	gcc -c -I ./hfiles ./cfiles/bibl.c
 
 
 ofiles/main1.o: ./cfiles/main1.c
-	gcc -c -I ./hfiles/ main1.c
+	gcc -c -I ./hfiles/ ./cfiles/main1.c
