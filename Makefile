@@ -1,28 +1,26 @@
 
-trpolab: ofiles/test.o ofiles/main.o ofiles/bibl.o
-	gcc -lm -o trpolab  ofiles/test.o ofiles/main.o ofiles/bibl.o
+trpolab: test.o main.o bibl.o
+	gcc -lm -I -o trpolab  test.o main.o bibl.o
 
 
 
 
-test: ofiles/test.o ofiles/main1.o ofiles/bibl.o
-	gcc -lm -o test ofiles/test.o ofiles/main1.o ofiles/bibl.o  
+test: test.o main1.o bibl.o
+	gcc -lm -I -o test test.o main1.o bibl.o  
 
 
-ofiles/main.o: cfiles/main.c hfiles/bibl.h 
-	gcc -c cfiles/main.c
+ofiles/main.o: main.c bibl.h 
+	gcc -c -I main.c
 
 
 ofiles/test.o: cfiles/test.c hfiles/bibl.h 
-	gcc -c cfiles/test.c
+	gcc -c -I cfiles/test.c
 
 
 
+ofiles/bibl.o: bibl.c bibl.h
+	gcc -c -I bibl.c
 
 
-ofiles/bibl.o: cfiles/bibl.c hfiles/bibl.h
-	gcc -c cfiles/bibl.c
-
-
-ofiles/main1.o: cfiles/main1.c
-	gcc -c cfiles/main1.c
+ofiles/main1.o: main1.c
+	gcc -c -I main1.c
