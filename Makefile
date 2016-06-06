@@ -3,11 +3,11 @@ HF=./hfiles
 CF=./cfiles
 
 trpolab: $(OF)/main.o $(OF)/bibl.o
-	gcc -lm -o trpolab $(OF)/main.o $(OF)/bibl.o
+	gcc -o trpolab $(OF)/main.o $(OF)/bibl.o -lm
 
 
 test: $(OF)/test.o $(OF)/main1.o $(OF)/bibl.o
-	gcc -lm -o test $(OF)/test.o $(OF)/main1.o $(OF)/bibl.o  
+	gcc -o test $(OF)/test.o $(OF)/main1.o $(OF)/bibl.o -lm  
 
 
 $(OF)/main.o: $(CF)/main.c $(HF)/bibl.h 
