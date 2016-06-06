@@ -18,9 +18,9 @@ int main()
     printf("vvedite c: "); scanf("%f", &c);
     struct Square z = func1(a, b, c);
 
-	if(z.state == 0) printf(" kornei  nema");
-	if(z.state == 1) printf("  x = %6f", z.res1);
-	if(z.state == 2) printf("  x1 = %6f \n   x2 = %6f", z.res1, z.res2);
+	if(z.state == 0) printf(" kornei  nema\n");
+	if(z.state == 1) printf("  x = %6f\n", z.res1);
+	if(z.state == 2) printf("  x1 = %6f \n   x2 = %6f\n", z.res1, z.res2);
     return 0;
     
 }
