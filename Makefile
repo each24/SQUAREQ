@@ -1,12 +1,12 @@
 
 trpolab: test.o main.o bibl.o
-	gcc -lm -I -o trpolab  test.o main.o bibl.o
+	gcc -lm -o -I trpolab  test.o main.o bibl.o
 
 
 
 
 test: test.o main1.o bibl.o
-	gcc -lm -I -o test test.o main1.o bibl.o  
+	gcc -lm -o -I test test.o main1.o bibl.o  
 
 
 ofiles/main.o: main.c bibl.h 
